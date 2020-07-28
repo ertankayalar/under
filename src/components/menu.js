@@ -3,14 +3,19 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Menu = ({ menuClassName, itemClassName }) => (
-<div className={ menuClassName }>
 
-<Link className={ itemClassName } to="/">GİRİŞ</Link>
-<Link className={ itemClassName } to="/hakkimizda/">HAKKIMIZDA</Link>
-<Link className={ itemClassName } to="/hizmetler/">HİZMETLER</Link>
-<Link className={ itemClassName } to="/iletisim/">İLETİŞİM</Link>
+    <div class="md:col-span-2 py-5 hidden md:block" id="menu">
 
+    <ul class="flex flex-wrap md:justify-end">
+        <li class="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600"><a href="/">Home</a></li>
+        <li class="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600"><a href="/about">About</a></li>
+        <li class="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600"><a href="/blog">Blog</a></li>
+        <li class="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600"><a href="/products">Products</a></li>
+        <li class="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600"><a href="/contact">Contact</a></li>
+    </ul>
 </div>
+
+
 
 
 )

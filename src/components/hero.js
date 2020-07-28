@@ -1,30 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import ActionButton from "../components/action-button"
 
-const Hero = ({ siteTitle }) => (
+const Hero = ({ heroTitle, heroMessage, buttonLink, buttonText }) => (
 
-
-<div className="w-full bg-gray-700 text-center">
-<div className="container mx-auto  py-20">
-  <h1 className="text-6xl font-light mt-20 text-gray-100">Size <span className="text-blue-200">Özel</span> Ürünler ve Hizmetler <span className="font-semibold text-blue-200s">Geliştiriyoruz</span></h1>
-  <p className="text-2xl text-gray-300 font-light mb-20">
-  Hayalinizdeki projenizi yaşayan <span className="text-blue-200">sonuçlara</span> dönüştürecek yazılım geliştirme ve tasarım ekibiyiz.
-  </p>
-  <ActionButton to="/iletisim/" title="Bizimle Çalışın" />
+  <div className="w-full bg-gray-100 h-auto">
+  <div className="container mx-auto py-20 text-center">
+      <h1 className="text-4xl py-10 text-brown-500">{ heroTitle }</h1>
+      <p className="text-2xl text-gray-500 py-10">{ heroMessage }</p>
+      <Link to={ buttonLink } className="btn">{ buttonText }</Link>
+  </div>
 </div>
-</div>
+
+
 
 
 )
   
 Hero.propTypes = {
-  siteTitle: PropTypes.string,
+  heroTitle: PropTypes.string,
+  heroMessage: PropTypes.string,
+  buttonLink: PropTypes.string,
+  buttonText: PropTypes.string
 }
 
 Hero.defaultProps = {
-  siteTitle: ``,
+  heroTitle: `Value Proposition`,
+  heroMessage: `We are ready for your requests`,
+  buttonLink: `/`,
+  buttonText: `Contact Us`
 }
 
 export default Hero

@@ -6,25 +6,39 @@ import Menu from "../components/menu"
 
 const Footer = ({ siteTitle }) => (
 
-
-    <footer class="bg-gray-200 text-gray-700 w-full">
-          <Menu menuClassName="container flex justify-center mx-auto p-10" itemClassName="block py-2 px-4 text-gray-600 hover:text-gray-700" />
-    
-    <div className="container flex justify-center mx-auto p-10">
-      <p>
-      © { siteTitle } 1998-{new Date().getFullYear()}. 
-      {` `}
-       Tüm hakları saklıdır.
-     
-      </p>
+  <footer className="bg-bluegray-100 w-full">
+  <div className="container mx-auto py-10">
+      <div className="grid grid-cols-3 gap-3 text-gray-800">
+          <div>
+              <h4 className="text-xl">Widget 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam enim pariatur quae harum expedita! Laudantium odio ipsum consequatur commodi voluptatum quae tenetur placeat, consequuntur ea officiis nobis obcaecati inventore?</p>
+          </div>
+          <div>
+              <h4 className="text-xl">Widget 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam enim pariatur quae harum expedita! Laudantium odio ipsum consequatur commodi voluptatum quae tenetur placeat, consequuntur ea officiis nobis obcaecati inventore?</p>
+          </div>
+          <div>
+              <h4 className="text-xl">Widget 1</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam enim pariatur quae harum expedita! Laudantium odio ipsum consequatur commodi voluptatum quae tenetur placeat, consequuntur ea officiis nobis obcaecati inventore?</p>
+          </div>
+      </div>
 
 
   </div>
+     
+  <div className="w-full py-1 bg-bluegray-800">
+      <div className="container mx-auto text-gray-100">
+          <p>
+      © { siteTitle } 1998-{new Date().getFullYear()}. 
+      {` `}
+      All rights reserved.
+     
+      </p>
 
-    
-    
-  </footer>
-  
+      </div>
+  </div>
+</footer>
+
   
   )
   

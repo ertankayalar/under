@@ -4,28 +4,19 @@ import PropTypes from "prop-types"
 import ActionButton from "../components/action-button"
 
 
-const cta = ({ to, title, message }) => (
+const cta = ({ title, message, buttonLink, buttonText }) => (
 
 
-<div className="w-full bg-indigo-700 py-20">
-  <div className="container mx-auto my-10 text-center">
-    <div className="row">
-    <h5 className="text-3xl text-white">{ title }</h5>
 
-    </div>
-    <div className="row py-10">
-    <p className="text-center text-gray-100 mx-10 block">
-      { message }
-    </p>
-
-    </div>
-    <div className="row py-10">
-    <ActionButton to="/iletisim/" title="Bize Ulaşın" className="bg-gray-200 text-2xl py-5 px-10 text-indigo-700 rounded hover:bg-green-400 hover:text-white"/>
-    </div>
-    
+  <div class="w-full bg-white">
+  <div class="container mx-auto text-center py-20 px-10">
+      <h2 class="text-4xl text-gray-700">{ title }</h2>
+      <p class="text-2xl text-gray-600 my-5">{ message }</p>
+      <Link to={ buttonLink } className="btn-outline">{ buttonText }</Link>
   </div>
 
 </div>
+
 
 
 
@@ -34,14 +25,16 @@ const cta = ({ to, title, message }) => (
 
 cta.propTypes = {
     title: PropTypes.string,
-    to: PropTypes.string,
-    message: PropTypes.string
+    message: PropTypes.string,
+    buttonLink: PropTypes.string,
+    buttonText: PropTypes.string
   }
   
   cta.defaultProps = {
     title: ``,
-    to: ``,
-    message: ``
+    message: ``,
+    buttonLink: `/contact/`,
+    buttonText: `Contact Us`
   }
   
   export default cta
