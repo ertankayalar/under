@@ -4,6 +4,9 @@
 @tailwind base;
 @tailwind components;
 
+body {
+   @apply font-body;
+}
 
 .btn {
     @apply   bg-primary-700 text-gray-100 py-3 px-10 m-5 rounded border-primary-600 border-2;
