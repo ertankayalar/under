@@ -6,25 +6,8 @@ import Menu from "../components/menu"
 
 const Footer = ({ siteTitle }) => (
 
-  <footer className="bg-bluegray-100 w-full">
-  <div className="container mx-auto py-10">
-      <div className="grid grid-cols-3 gap-3 text-gray-800">
-          <div>
-              <h4 className="text-xl">Widget 1</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam enim pariatur quae harum expedita! Laudantium odio ipsum consequatur commodi voluptatum quae tenetur placeat, consequuntur ea officiis nobis obcaecati inventore?</p>
-          </div>
-          <div>
-              <h4 className="text-xl">Widget 1</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam enim pariatur quae harum expedita! Laudantium odio ipsum consequatur commodi voluptatum quae tenetur placeat, consequuntur ea officiis nobis obcaecati inventore?</p>
-          </div>
-          <div>
-              <h4 className="text-xl">Widget 1</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam enim pariatur quae harum expedita! Laudantium odio ipsum consequatur commodi voluptatum quae tenetur placeat, consequuntur ea officiis nobis obcaecati inventore?</p>
-          </div>
-      </div>
+  <footer className="w-full">
 
-
-  </div>
      
   <div className="w-full py-1 bg-bluegray-800">
       <div className="container mx-auto text-gray-100">
