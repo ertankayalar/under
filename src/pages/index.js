@@ -7,11 +7,17 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import CTA from "../components/cta"
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero heroTitle="Gatsby Boilerplate" heroMessage="" buttonLink="/contact/" buttonText="Act Now" />
     
+
+    <div className="w-full bg-bluegray-400 py-20 text-center text-gray-100">
+
+  
+    </div>
     <div className="w-full bg-bluegray-400 py-20 text-center text-gray-100">
             <div className="container mx-auto my-10">
 
