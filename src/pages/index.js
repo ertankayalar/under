@@ -12,7 +12,7 @@ const IndexPage = ({ siteTitle }) => {
         className="w-full h-screen bg-gray-300 flex items-center justify-center"
         style={{
           backgroundImage:
-            "background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12)",
+            "linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12)",
         }}
       >
         <div className="mb-20 text-center">
