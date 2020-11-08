@@ -6,18 +6,6 @@ const Menu = ({ menuClassName, itemClassName }) => (
   <div className="md:col-span-2 py-5 hidden md:block" id="menu">
     <ul className="flex flex-wrap md:justify-end">
       <li className="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600">
-        <a href="/">Home</a>
-      </li>
-      <li className="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600">
-        <a href="/about">About</a>
-      </li>
-      <li className="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600">
-        <a href="/blog">Blog</a>
-      </li>
-      <li className="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600">
-        <a href="/products">Products</a>
-      </li>
-      <li className="text-gray-700 py-2 w-full text-center md:px-2 md:w-auto md:inline-block hover:text-primary-600">
         <a href="/contact">Contact</a>
       </li>
     </ul>
