@@ -8,12 +8,18 @@ const IndexPage = ({ siteTitle }) => {
   return (
     <Layout>
       <SEO title="Wellcome" />
-      <div className="w-full h-screen bg-gray-300 flex items-center justify-center">
+      <div
+        className="w-full h-screen bg-gray-300 flex items-center justify-center"
+        style={{
+          backgroundImage:
+            "background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12)",
+        }}
+      >
         <div className="mb-20 text-center">
-          <h1 className="text-7xl md:text-8xl font-bold text-indigo-800">
-            Pazaryeri
+          <h1 className="text-6xl md:text-7xl font-bold text-white">
+            Hotel Catalog
           </h1>
-          <p className="text-3xl text-gray-600">
+          <p className="text-3xl text-primary-200">
             Web site is under construction
           </p>
         </div>

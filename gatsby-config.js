@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Pazaryeri`,
+    title: `Hotelcatalog.com`,
     description: `Gatsby boilerplate project`,
     author: `@ertankayalar`,
   },
