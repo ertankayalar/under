@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Pazaryeri`,
+    title: `Trade Catalog`,
     description: `Gatsby boilerplate project`,
     author: `@ertankayalar`,
   },
